@@ -25,3 +25,4 @@ export class NotFoundError extends AppError {
         super(404, message)
     }
 }
+

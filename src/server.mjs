@@ -14,6 +14,9 @@ app.all('{*splat}',(req,res,next)=>{
    throw new NotFoundError("Страница не найдена")
 })
 app.use(errorHandler)
+
+
+
 app.listen(port,()=>{
     console.log(`server listen on http://localhost:${port}`)
 })
