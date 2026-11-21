@@ -19,6 +19,8 @@
   },
   "dependencies": {
     "argon2": "^0.45.2",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
     "bullmq": "^6.7.0",
     "cors": "^2.8.6",
     "dotenv": "^18.0.9",
@@ -30,6 +32,7 @@
     "node-pg-migrate": "^9.0.0",
     "nodemon": "^3.1.14",
     "pg": "^8.23.1",
+    "pg-pool": "^3.14.0",
     "pino": "^10.4.0",
     "pino-http": "^11.0.0",
     "rate-limit-redis": "^6.0.2",
