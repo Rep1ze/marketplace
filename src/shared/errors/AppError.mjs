@@ -26,3 +26,9 @@ export class NotFoundError extends AppError {
     }
 }
 
+export class UnauthorizedError extends AppError {
+    constructor(message){
+        super(401,message)
+    }
+}
+

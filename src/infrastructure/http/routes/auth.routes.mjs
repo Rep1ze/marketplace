@@ -1,10 +1,14 @@
 import express from "express"
-import { RegisterGet, RegisterPost } from "../controllers/auth.controller.mjs"
-
+import { CreateGet, IndexGet, LoginGet, LoginPost, RegisterGet, RegisterPost } from "../controllers/auth.controller.mjs"
 const authRouter = express.Router()
 
-authRouter.post("/register",RegisterPost)
-authRouter.get("/register",RegisterGet)
+export const authPages = express.Router()
+authPages.get("/login",LoginGet)
+authPages.get("/register",RegisterGet)
+authPages.get("/create",CreateGet)
+
+export const authApi = express.Router()
+authApi.post("/login",LoginPost)
+authApi.post("/register",RegisterPost)
 
 
-export default authRouter

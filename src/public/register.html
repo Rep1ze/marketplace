@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a class="logo" href="/">Маркет</a>
+            <nav class="nav">
+                <a href="/create">Создать товар</a>
+                <a class="nav__primary" href="/login">Войти</a>
+            </nav>
+        </div>
+    </header>
+    <main class="auth">
+        <section class="panel">
+            <h1>Регистрация</h1>
+            <p class="panel__lead">Создайте аккаунт, чтобы добавлять товары.</p>
+            <form class="form" id="form">
+                <div class="field">
+                    <label for="name">Имя</label>
+                    <input id="name" autocomplete="name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" autocomplete="email" required>
+                </div>
+                <div class="field">
+                    <label for="password">Пароль</label>
+                    <input id="password" type="password" autocomplete="new-password" pattern="[A-Za-z]\w{7,14}" title="8–15 символов: буквы, цифры и _, первая — буква" required>
+                    <span class="field__hint">8–15 символов: латинские буквы, цифры и _. Первая — буква.</span>
+                </div>
+                <button class="btn" id="btn">Зарегистрироваться</button>
+            </form>
+            <p class="note">Уже есть аккаунт? <a href="/login">Войти</a></p>
+        </section>
+    </main>
+    <script src="/header.js" defer></script>
+    <script src="/register.js" defer></script>
+</body>
+</html>
